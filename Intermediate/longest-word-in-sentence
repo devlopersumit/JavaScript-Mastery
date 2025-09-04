@@ -1,0 +1,14 @@
+const sentence = "Hey, hii I am a Full Stack AI Engineer! Congratulations";
+
+const words = sentence.split(' ');
+
+
+let largestWord = words[0];
+
+for(let word of words) {
+    if(largestWord.length<word.length) {
+        largestWord = word;
+    }
+}
+
+console.log("Largest word is: ", largestWord);
